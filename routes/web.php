@@ -28,6 +28,7 @@ Route::get('/user/invoice/{invoice}', function (Request $request, $invoiceId) {
         'product' => 'Subscription Payment',
     ]);
 });
+Route::get('/history', 'HistoryController@index');
 
 Route::get('/group-test/{id}', function(Request $request, $id){
 
